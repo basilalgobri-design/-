@@ -17,7 +17,7 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWix+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8bl5Q5c5h6Nq6V9M9Q5fJ8Q7L0Vh6Q=="
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -33,10 +33,16 @@
             <small>تعلم ممتع لمستقبل ذكي</small>
           </span>
         </a>
-        <button class="menu-btn" aria-label="فتح القائمة">
+        <button
+          class="menu-btn"
+          type="button"
+          aria-label="فتح القائمة"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
           <i class="fa-solid fa-bars"></i>
         </button>
-        <nav class="nav-links" aria-label="التنقل الرئيسي">
+        <nav class="nav-links" id="primary-navigation" aria-label="التنقل الرئيسي">
           <a href="#hero">الرئيسية</a>
           <a href="#benefits">لماذا البرمجة؟</a>
           <a href="#tracks">المسارات</a>
